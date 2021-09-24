@@ -1,0 +1,40 @@
+.refer-card {
+  box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 1.5rem;
+  height: 73px;
+  min-height: 73px;
+  .refer-card-sec {
+    display: flex;
+    align-items: center;
+    .refer-card-img {
+      margin-right: 0.7rem;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1b1b1b;
+    }
+  }
+  .refer-card-middle{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+    .mobile-input{
+        width:260px;
+        .MuiInputBase-input{
+          font-weight: 300!important;
+          font-size: 14px!important;
+          line-height: 17px!important;
+        }
+    }
+  }
+  p{
+    font-size: 10px;
+    line-height: 12px;
+    color: #676767;
+  }
+}

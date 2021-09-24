@@ -1,0 +1,22 @@
+.loading {
+  .loader {
+    .not-found-img {
+      width: 10rem;
+      height: 10rem;
+      margin: 0rem auto;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    h1 {
+      margin-bottom: 3rem;
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 1rem;
+      color: #1B1B1B;
+    }
+  }
+}

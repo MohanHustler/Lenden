@@ -1,0 +1,381 @@
+// leagal-auth
+.leagal-auth-sec {
+  background: linear-gradient(270deg, #ffffff 46.92%, #ececec 100%);
+  .leagal-auth {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    .leagal-auth-image {
+      text-align: center;
+      margin: 0 auto;
+      flex-basis: 49%;
+      position: relative;
+      height: 100vh;
+      .leagal-auth-image-container {
+        width: 32.4rem;
+        height: 19.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .leagal-auth-accept-sec {
+      width: 50%;
+      text-align: left;
+      .leagal-auth-accept-desc-sec {
+        width: 34rem;
+        margin: 0px auto;
+        padding-top: 7rem;
+        margin-bottom: 4rem;
+        .leagal-auth-accept-content {
+          h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            margin-bottom: 5.2rem;
+            color: #1b1b1b;
+          }
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.7rem;
+            line-height: 2.1rem;
+            margin-bottom: 3.9rem;
+            color: #1b1b1b;
+          }
+        }
+        .auth-letter {
+          border: 0.05rem solid #5f5f5f;
+          box-sizing: border-box;
+          border-radius: 0.8rem;
+          margin-bottom: 1rem;
+          transition: height 280ms cubic-bezier(0.4, 0, 0.2, 1);
+          .auth-letter-collaps {
+            padding: 1.6rem 1.3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            label {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.4rem;
+              line-height: 1.7rem;
+              cursor: pointer;
+            }
+            span {
+              width: 1.2rem;
+              height: 0.7rem;
+              cursor: pointer;
+              image {
+                width: 100%;
+                object-fit: contain;
+              }
+            }
+          }
+          .auth-letter-collaps-desc {
+            padding: 0rem 1.3rem 1.6rem;
+            label {
+              display: block;
+              font-style: bold;
+              font-weight: 500;
+              font-size: 1.3rem;
+              line-height: 1.6rem;
+              color: #676767;
+              margin-top: 0.9rem;
+            }
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.3rem;
+              line-height: 1.6rem;
+              color: #676767;
+              margin-bottom: 0.5rem;
+            }
+            a {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.2rem;
+              line-height: 1.5rem;
+              color: #000000;
+              display: inline-block;
+              cursor: pointer;
+              text-decoration: none;
+              img {
+                width: 14px;
+                height: 14px;
+                object-fit: contain;
+                display: inline-block;
+                vertical-align: text-top;
+                margin-left: 1.2rem;
+              }
+            }
+          }
+          .kyc-select-from {
+            padding: 0rem 1.3rem 1.6rem;
+            .kyc-select-option {
+              margin-bottom: 1.8rem;
+              h2 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 19px;
+                color: #5f5f5f;
+                margin-bottom: 1rem;
+              }
+              .kyc-selected-option {
+                display: flex;
+                label {
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 13px;
+                  line-height: 16px;
+                  color: #d6d6d6;
+                  cursor: pointer;
+                  margin-right: 4rem;
+                }
+                .active-class {
+                  cursor: pointer;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 13px;
+                  line-height: 16px;
+                  color: #319cd8;
+                  padding-bottom: 0.5rem;
+                  border-bottom: 2px solid #319cd8;
+                }
+              }
+              .scan-image {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1.3rem;
+                height: 77px;
+                cursor: pointer;
+                .scan-card {
+                  width: 40%;
+                  padding: 0.8rem 1rem;
+                  background: #f6f6f6;
+                  border-radius: 8px;
+                  position: relative;
+                  .chooseflie-sec {
+                    width: 100%;
+                    position: absolute;
+                    height: 7rem;
+                    left: 0rem;
+
+                    input[type="file"] {
+                      overflow: hidden;
+                    }
+                    .chooseflie {
+                      width: 100%;
+                      height: 7rem;
+                      opacity: 0;
+                    }
+                  }
+                  .scan-card-img {
+                    text-align: right;
+                    img {
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+                  .scan-card-content {
+                    margin-top: 1.2rem;
+                    p {
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 10px;
+                      line-height: 12px;
+                      color: #5f5f5f;
+                      text-align: center;
+                    }
+                    label {
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 8px;
+                      line-height: 10px;
+                      color: #5f5f5f;
+                      text-align: center;
+                      margin-top: 0.3rem;
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .auth-accept-check {
+          margin-bottom: 2.5rem;
+          display: flex;
+          margin-left: 0.9rem;
+          label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            color: #a6a6a6;
+          }
+        }
+        .proceed-btn {
+          margin-top: 3rem;
+          .green-btn {
+            width: 100%;
+          }
+        }
+        .process-bar {
+          margin-top: 2rem !important;
+          label {
+            margin-right: 58px;
+            float: right;
+          }
+        }
+        .leagal-auth-accept-letter-desc {
+          h2 {
+            font-style: bold;
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            color: #000000;
+          }
+          p {
+            font-style: normal;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            color: #000000;
+            margin-top: 2rem;
+          }
+        }
+        .simple-agreement-sec {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 3.5rem;
+          .simple-agreement-content {
+            font-style: normal;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            margin-top: 2rem;
+            color: #319cd8;
+            text-decoration: none;
+            cursor: pointer;
+            :hover {
+              color: #319cd8;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .leagal-auth-accept-desc-letter {
+        width: 90% !important;
+      }
+    }
+    .leagal-auth-accept-letter {
+      height: auto;
+    }
+  }
+}
+// Mobile responsive
+
+@media only screen and (max-width: 768px) {
+  .leagal-auth-sec {
+    background: #ffffff;
+    .leagal-auth {
+      flex-direction: column;
+      padding: 0rem 3.5rem;
+      .leagal-auth-image {
+        display: none;
+      }
+      .leagal-auth-accept-sec {
+        width: 100%;
+        height: auto;
+        .leagal-auth-accept-desc-sec {
+          padding-top: 6.5rem;
+          width: 100%;
+          .leagal-auth-accept-content {
+            h2 {
+              text-align: center;
+            }
+          }
+        }
+        .leagal-auth-accept-desc-letter {
+          width: 100% !important;
+        }
+      }
+      .leagal-auth-accept-letter {
+        height: auto !important;
+      }
+    }
+  }
+}
+
+// Check box SCSS start
+.checkbox-accept {
+  margin-right: 2rem;
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark {
+        background: #adde88;
+        box-shadow: 0px 0px 5px #6fa346;
+        &:after {
+          display: block;
+        }
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      background: #fefefe;
+      border: 0.5px solid #d9d9d9;
+      box-sizing: border-box;
+      box-shadow: inset 0px 0px 5px #d6d6d6;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 5px;
+        top: 0px;
+        width: 3px;
+        height: 9px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: #a6a6a6;
+      margin-left: 2.5rem;
+    }
+  }
+}
+// Check box SCSS end

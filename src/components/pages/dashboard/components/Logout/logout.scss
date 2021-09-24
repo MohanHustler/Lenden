@@ -1,0 +1,52 @@
+// logout section
+.logout-section {
+    background: #ffffff;
+    box-shadow: 0.4rem 0.4rem 0.9rem rgba(105, 105, 105, 0.2);
+    border-radius: 0.7rem;
+    .sections {
+      ul {
+        li {
+          border-bottom: 0.4px solid #c4c4c4;
+          padding: 1.03rem 0rem;
+          width: 14.5rem;
+          margin: 0 1.1rem;
+          cursor: pointer;
+          label {
+            cursor: pointer;
+            img {
+              width: 2rem;
+              margin-left: 5px;
+              cursor: pointer;
+            }
+          }
+          span {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            color: #000000;
+            vertical-align: super;
+            margin-left: 1.2rem;
+            cursor: pointer;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+        .active {
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  // .MuiDialog-root{
+  //   right: 15px !important;
+  //   bottom: initial !important;
+  //   top: 70px !important;
+  //   left: initial !important;
+  // }
+  .MuiDialogContent-root{
+    padding:0rem !important;
+  }
+  .MuiDialog-paper{
+    margin: 0rem !important;
+  }

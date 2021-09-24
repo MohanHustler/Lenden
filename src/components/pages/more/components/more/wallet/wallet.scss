@@ -1,0 +1,60 @@
+.wallet-card {
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+  border-radius: 10px;
+  .wallet-card-head {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1b1b1b;
+    }
+  }
+  .wallet-card-middle {
+    margin: 3rem 0rem;
+    h2 {
+      margin-top: 10px;
+    }
+    label {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 50px;
+      color: #1b1b1b;
+      span {
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .wallet-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .MuiTypography-colorTextSecondary {
+      font-size: 1.6rem;
+    }
+    .MuiInput-underline:before {
+      border-bottom: 0.1rem solid #cfcfcf;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: 0.1rem solid #cfcfcf;
+    }
+    .MuiInput-underline:after {
+      border-bottom: 0.1rem solid #cfcfcf;
+    }
+    .custom-input {
+      width: 267px;
+      input {
+        font-size: 14px;
+        line-height: 17px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}

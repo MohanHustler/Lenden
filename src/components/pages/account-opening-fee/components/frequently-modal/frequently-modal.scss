@@ -1,0 +1,49 @@
+.hover-show-pop-up {
+  .pop-up-hover {
+    width: 35rem;
+    background: #fbfbfb;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem 1.8rem;
+    display: flex;
+    height: 15rem;
+    overflow-y: scroll;
+    .pop-up-hover-image {
+      width: 40px;
+      height: 25px;
+      background: #319cd8;
+      border-radius: 100%;
+      text-align: center;
+      align-self: flex-end;
+      img {
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+        position: relative;
+        top: 0.6rem;
+      }
+    }
+    .pop-up-hover-content {
+      margin-left: 2rem;
+      .pop-up-hover-content-desc {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4d4d4d;
+        margin-bottom: 1rem;
+        display: block;
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+    span {
+      position: absolute;
+      right: 0rem;
+      img {
+        width: 1.5rem;
+      }
+    }
+  }
+}

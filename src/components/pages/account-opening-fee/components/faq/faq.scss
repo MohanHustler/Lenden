@@ -1,0 +1,36 @@
+.frequently-ask {
+  margin-top: 2.5rem;
+  .frequently-ask-content {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    label {
+      font-style: bold;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1b1b1b;
+      margin-right: 1rem;
+    }
+    span {
+      width: 25px;
+      height: 25px;
+      background: #319cd8;
+      border-radius: 100%;
+      text-align: center;
+      img {
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+        position: relative;
+        top: 0.6rem;
+      }
+    }
+  }
+}
+
+// .MuiPopover-paper {
+//   top: 540px !important;
+//   left: 318px !important;
+// }

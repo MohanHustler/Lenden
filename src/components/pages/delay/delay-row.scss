@@ -1,0 +1,25 @@
+.delay-row {
+    background: #ffffff;
+    border-radius: 10px !important;
+    box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+    padding: 0rem 1rem;
+    position: relative;
+    td {
+      padding: 1.3rem 1rem;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1b1b1b;
+      width: 17%;
+    }
+    span {
+      position: relative;
+      padding: 0.8rem;
+      display: inline-block;
+      margin-top: 6px;
+      cursor: pointer;
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }

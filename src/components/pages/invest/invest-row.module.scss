@@ -1,0 +1,262 @@
+.customRow {
+  background: #ffffff;
+  border-radius: 10px !important;
+  box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+  padding: 0rem 1rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  td {
+    padding: 1.3rem 1rem;
+    font-size: 1.3rem;
+    line-height: 17px;
+    color: #1b1b1b;
+    width: 20rem;
+  }
+  span {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    padding: 0.8rem;
+    display: inline-block;
+    margin-top: 6px;
+    background: #f4f4f4;
+    box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.09);
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  
+}
+
+.arrowChange{
+  position: absolute;
+  top:20px;
+  right:15px;
+  background: #F4F4F4;
+box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.09);
+border-radius: 3px 0px 0px 3px;
+padding: 0.8rem;
+img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+}
+.collapse {
+  width: 100%;
+  display: block;
+  td {
+    width: 100%;
+    display: block;
+  }
+  .customCollpase {
+    padding: 1rem 1.4rem;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    .userList {
+      flex-basis: 15%;
+      ul {
+        li {
+          padding: 0.7rem 1rem;
+          label {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #1b1b1b;
+          }
+          &:active {
+            background: #f4f4f4;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .userDetail {
+      background: #f4f4f4;
+      border-radius: 7px;
+      padding: 2.4rem;
+      flex-basis: 50%;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        li {
+          margin-bottom: 2.5rem;
+          label {
+            font-size: 12px;
+            line-height: 15px;
+            color: #1b1b1b;
+            font-weight: 600;
+            width: 25rem;
+            display: inline-block;
+          }
+          span {
+            font-size: 14px;
+            line-height: 17px;
+            color: #1b1b1b;
+          }
+          &:last-child {
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      .userDetailList1 {
+        &:nth-child(2){
+          width: 9rem;
+        }
+      }
+      .userDetailList2 {
+        li {
+          label {
+            width: 13rem;
+          }
+        }
+      }
+      .line {
+        display: inline-block;
+        height: 22.5rem;
+        width: 0.1rem;
+        background-color: #000000;
+      }
+     
+    }
+    .userGraph {
+      flex-basis: 30%;
+      .userGraphImg {
+        width: 21rem;
+        height: 13rem;
+        text-align: center;
+        margin: 0.9rem auto;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.customWidth{
+  ul{
+    li{
+      label{
+        width: 11rem!important;
+      }
+    }
+  }
+}
+
+
+// responsive
+@media only screen and (max-width: 1200px) {
+  .collapse {
+    .customCollpase {
+      .userList {
+        flex-basis: 17%;
+      }
+      .userDetail {
+        padding: 1.4rem 0rem;
+        flex-basis: 58%;
+        display: flex;
+        justify-content: space-around;
+        .userDetailList1 {
+          flex-basis: 25%;
+          li {
+            label {
+              width: 6rem;
+            }
+          }
+        }
+        .userDetailList2 {
+          flex-basis: 30%;
+          li {
+            label {
+              width: 10rem;
+            }
+          }
+        }
+      }
+      .userGraph {
+        flex-basis: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .collapse {
+    .customCollpase {
+      flex-wrap: wrap;
+      .userList {
+        flex-basis: 100%;
+        ul {
+          display: flex;
+          justify-content: space-around;
+          li {
+            width: 15rem;
+          }
+        }
+      }
+      .userDetail {
+        flex-basis: 43%;
+        display: block;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        padding: 0rem 2rem;
+        .userDetailList1 {
+          display: flex;
+          li {
+            padding: 1.4rem 0rem;
+            margin-bottom: 0rem;
+            width: 12rem;
+            label {
+              width: 12rem;
+              margin-bottom: 1rem;
+            }
+            span {
+              width: 12rem;
+            }
+          }
+        }
+        .line {
+          display: none;
+        }
+        .userDetailList2 {
+          display: flex;
+          li {
+            padding: 1.4rem 0rem;
+            margin-bottom: 0rem;
+            width: 12rem;
+            label {
+              width: 12rem;
+              margin-bottom: 1rem;
+            }
+            span {
+              width: 12rem;
+            }
+          }
+        }
+      }
+      .userGraph {
+        flex-basis: 50%;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+      }
+    }
+  }
+  .MuiFlatPagination-root{
+    width: 100%!important;
+  }
+}
+
+
+.active {
+  background: #f4f4f4;
+  border-radius: 4px;
+}

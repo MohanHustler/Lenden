@@ -1,0 +1,58 @@
+// investment
+
+.investment-sec {
+  width: 100%;
+  .investment-title {
+    margin-bottom: 1.7rem;
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #4d4d4d;
+    }
+  }
+  .investment-card-sec {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    overflow-x: auto;
+    .investment-card {
+      background: linear-gradient(114.11deg, #f4f4f4 3.52%, #fdfdfd 99.18%);
+      border-radius: 12px;
+      padding: 1.1rem 1.6rem;
+      min-width: 19.1rem;
+      margin-right: 1rem;
+      ul {
+        li {
+          margin-bottom: 0.9rem;
+          display: flex;
+          justify-content: space-between;
+          label {
+            width: 40%;
+            text-align: left;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+          }
+          span {
+            text-align: right;
+            font-style: bold;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .investment-sec {
+    width: 100%;
+  }
+}

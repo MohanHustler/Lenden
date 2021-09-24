@@ -1,0 +1,39 @@
+.more-status-card {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(91, 91, 91, 0.2);
+  border-radius: 10px;
+  padding: 1.2rem 1.6rem;
+  height: 4.5rem;
+  cursor: pointer;
+  .more-status-card-top {
+    display: flex;
+    justify-content: space-between;
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1b1b1b;
+      width: 13rem;
+    }
+    span {
+      img {
+        width: 3rem;
+      }
+    }
+  }
+  .more-status-card-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .5rem;
+    p {
+      background: #f4f4f4;
+      border-radius: 6px;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+      padding: 0.5rem 2rem;
+      width: 2.5rem;
+      margin-right: 1rem;
+    }
+  }
+}

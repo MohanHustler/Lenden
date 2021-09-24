@@ -1,0 +1,50 @@
+.invest-wrapper {
+  background-color: #fff;
+  padding: 0rem 2rem;
+  margin-top: 6rem;
+  width: auto;
+}
+.invest-container {
+  border-radius: 1.1rem 1.1rem 0rem 0rem;
+  background: #f9f9f9;
+  padding: 1.8rem;
+  width: auto;
+  .common-table {
+    table {
+      border-spacing: 0px 1rem;
+      tr {
+        th {
+          font-size: 14px;
+          line-height: 17px;
+          width: 20rem;
+          text-align: left;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+.invest-btn{
+  text-align:center;
+  margin-top: 2rem;
+  .width{
+    width: 20rem;
+  }
+}
+
+
+// responsive
+
+@media only screen and (max-width: 991px) {
+  .invest-wrapper { 
+    margin-top: 0rem;
+    padding: 0rem;
+    .invest-container { 
+      padding: 1.5rem;
+      .common-table { 
+        overflow: scroll;
+        overflow-y: hidden;
+      }
+    }
+  }
+}

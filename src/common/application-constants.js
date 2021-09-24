@@ -1,0 +1,67 @@
+/* All application level constants */
+
+export const LOCAL_STORAGE_USER_ID = "USER_ID";
+export const LOCAL_STORAGE_TOKEN = "TOKEN";
+export const LOCAL_STORAGE_EMAIL_ID = "EMAIL_ID";
+export const LOCAL_STORAGE_MOBILE_NUMBER = "MOBILE_NUMBER";
+export const LOCAL_STORAGE_TASK_ID = "TASK_ID";
+export const LOCAL_STORAGE_USER_TYPE = "USER_TYPE";
+export const LOCAL_STORAGE_FIRST_NAME = "FIRST_NAME";
+
+// Back end response for onboarding routes.
+// 1. ID DETAIL
+// 2. RF PAID
+// 3. LEGAL AUTHORIZATION
+// 4. LIVE KYC
+// 5. BASIC DETAIL
+// 6. BANK ACCOUNT
+export const ROUTER_PATH_ID_DETAIL = "ID DETAIL";
+export const ROUTER_PATH_ACCOUNT_FEE = "RF PAID";
+export const ROUTER_PATH_LEGAL_AUTHORIZATION = "LEGAL AUTHORIZATION";
+export const ROUTER_PATH_KYC_DETAILS = "LIVE KYC";
+export const ROUTER_PATH_ADDRESS = "BASIC DETAIL";
+export const ROUTER_PATH_BANK_ACCOUNT = "BANK ACCOUNT";
+
+export const REQUEST_PURPOSE_SIGN_UP = "SIGN_UP";
+export const REQUEST_PURPOSE_LOGIN = "LOGIN";
+
+export const USER_AS_INDIVIDUAL = "INDIVIDUAL";
+export const USER_AS_INSTITUTIONAL = "INSTITUTIONAL";
+
+export const USER_DEVICE_ANDROID = "ANDROID";
+export const USER_DEVICE_IOS = "IOS";
+export const USER_DEVICE_WEB = "WEB";
+
+export const GENDER_MALE = "MALE";
+export const GENDER_FEMALE = "FEMALE";
+
+export const MARITIAL_STATUS_SINGLE = "SINGLE";
+export const MARITIAL_STATUS_MARRIED = "MARRIED";
+export const MARITIAL_STATUS_WIDOWED_OR_DIVOCE = "WIDOWED_OR_DIVOCE";
+
+export const ADDRESS_PROOF_AADHAR = "AADHAR";
+export const ADDRESS_PROOF_VOTER_ID = "VOTER_ID";
+export const ADDRESS_PROOF_PASSPORT = "PASSPORT";
+
+export const ADDRESS_TYPE_PERMANENT = "PERMANENT";
+export const ADDRESS_TYPE_COMMUNICATION = "COMMUNICATION";
+
+export const STAY_TYPE_RENTED = "RENTED";
+export const STAY_TYPE_FAMILY_OWNED = "FAMILY OWNED";
+
+export const INVESTMENT_PERFORMANCE_LABELS_WITHOUT_USER = [
+  "MF",
+  "FD",
+  "LenDenClub"
+];
+export const INVESTMENT_PERFORMANCE_LABELS_WITH_USER = [
+  "MF",
+  "FD",
+  "LenDenClub",
+  "You"
+];
+
+export const NOTIFICATION_STATUS_UNREAD = "UNREAD";
+
+export const PORTFOLIO_PERCENTAGE_XIRR = "XIRR";
+export const PORTFOLIO_PERCENTAGE_NET_ROI = "NET_ROI";

@@ -1,0 +1,434 @@
+.dashboard-wrapper {
+  background-color: #fff;
+  padding: 0rem 2rem;
+  display: flex;
+  margin-top: 5.2rem;
+}
+.dashboard-container {
+  border-radius: 1.1rem 1.1rem 0rem 0rem;
+  background: #f9f9f9;
+  padding: 1.8rem;
+  width: 76%;
+}
+.profile-balance-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.account-balance {
+  flex-basis: 39.5%;
+}
+.portfolio-summary {
+  flex-basis: 51%;
+}
+.dashboard-primary-heading {
+  h1 {
+    color: #1b1b1b;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    padding-right: 1rem;
+    display: inline-block;
+    a{
+      text-decoration: none;
+      color: #1b1b1b;
+    }
+  }
+  label {
+    color: #1b1b1b;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: 'Quicksand';
+  }
+  span {
+    margin-left: 1rem;
+    img {
+      width: 10px;
+      height: 10px;
+      object-fit: cover;
+    }
+  }
+}
+.dashboard-secondary-heading {
+  h1 {
+    color: #1b1b1b;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    padding-right: 1rem;
+    display: inline-block;
+  }
+  label {
+    color: #1b1b1b;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: 'Quicksand';
+  }
+  span {
+    margin-left: 1rem;
+    img {
+      width: 10px;
+      height: 10px;
+      object-fit: cover;
+    }
+  }
+}
+.lending-performance-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.lending {
+  // flex-basis: 39.5%;
+  width: 25rem;
+}
+.invest-performance {
+  // flex-basis: 51%;
+}
+.dashboard-sidebar {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  width: 24%;
+}
+.dashboard-plan-detail {
+  display: flex;
+  padding-bottom: 2.4rem;
+  position: relative;
+  .dashboard-profile-img {
+    width: 5rem;
+    height: 5rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .dashboard-profile-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 0.6rem;
+    .dashboard-profile-name {
+      display: flex;
+      span {
+        font-family: 'Quicksand';
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #1b1b1b;
+      }
+      h1 {
+        font-family: 'Quicksand';
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #1b1b1b;
+        font-weight: bold;
+        padding-left: 0.5rem;
+      }
+    }
+
+    label {
+      font-family: 'Quicksand';
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #ffffff;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+      padding: 0.2rem 0.9rem;
+      cursor: pointer;
+    }
+  }
+  &:after {
+    content: '';
+    background-color: rgba(198, 198, 198, 0.5);
+    position: absolute;
+    left: 0rem;
+    height: 0.1rem;
+    width: 50%;
+    bottom: 0rem;
+    right: 0rem;
+    margin: 0rem auto;
+  }
+}
+.dashboard-profile-notes {
+  padding: 2rem 0rem;
+  position: relative;
+  h1 {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #1b1b1b;
+  }
+  .dashboard-profile-notes-wrap {
+    display: flex;
+    margin-top: 0.8rem;
+    .dashboard-profile-notes-img {
+      img {
+      }
+    }
+    p {
+      font-family: 'Quicksand';
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: #000000;
+      padding-left: 0.6rem;
+    }
+  }
+  &:after {
+    content: '';
+    background-color: rgba(198, 198, 198, 0.5);
+    position: absolute;
+    left: 0rem;
+    height: 0.1rem;
+    width: 50%;
+    bottom: 0rem;
+    right: 0rem;
+    margin: 0rem auto;
+  }
+}
+.dashboard-profile-upgrade {
+  padding: 2rem 0rem;
+  position: relative;
+  h1 {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #000000;
+    margin-bottom: 0.7rem;
+  }
+  label {
+    font-family: 'Quicksand';
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: #000000;
+  }
+  .dashboard-profile-ug-card-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+    margin-bottom: 1.1rem;
+    .dashboard-profile-ug-card {
+      height: 4.6rem;
+      flex-basis: 38%;
+      display: flex;
+      align-items: center;
+      padding: 0rem 1.2rem;
+      cursor: pointer;
+      label {
+        cursor: pointer;
+      }
+      span {
+      }
+      &.silver-card {
+        background: linear-gradient(
+          290.72deg,
+          #a3a3a3 4.49%,
+          #a3a3a3 4.5%,
+          #d7d7d7 103.78%
+        );
+        box-shadow: 0rem 0rem 1.4rem rgba(191, 191, 191, 0.5);
+        border-radius: 0.6rem;
+        justify-content: space-between;
+        margin-right: 2.5rem;
+        label {
+          font-family: 'Quicksand';
+          font-weight: bold;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          color: #ffffff;
+        }
+        span {
+          font-family: 'Quicksand';
+          font-weight: 500;
+          font-size: 0.9rem;
+          line-height: 1.1rem;
+          color: #6a6a6a;
+          background: #ffffff;
+          border-radius: 0.2rem;
+          padding: 0.5rem;
+        }
+      }
+      &.gold-card {
+        background: #eab327;
+        box-shadow: 0rem 0rem 1.5rem rgba(234, 179, 39, 0.5);
+        border-radius: 0.6rem;
+        justify-content: center;
+        label {
+          font-family: 'Quicksand';
+          font-weight: bold;
+          font-size: 1.4rem;
+          line-height: 1.7rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  p {
+    font-family: 'Quicksand';
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: #000000;
+  }
+  &:after {
+    content: '';
+    background-color: rgba(198, 198, 198, 0.5);
+    position: absolute;
+    left: 0rem;
+    height: 0.1rem;
+    width: 50%;
+    bottom: 0rem;
+    right: 0rem;
+    margin: 0rem auto;
+  }
+}
+.dashboard-referral {
+  padding: 2rem 0rem;
+  h1 {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #000000;
+    margin-bottom: 0.7rem;
+  }
+  label {
+    font-family: 'Quicksand';
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    color: #000000;
+    background: #eff9ff;
+    border-radius: 0.7rem;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+  input {
+    font-family: 'Quicksand';
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: #888888;
+  }
+  .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.9rem;
+    padding-bottom: 3.6rem;
+    .violet-button {
+      font-family: 'Quicksand';
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      color: #ffffff;
+      background: #575a89;
+      border-radius: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 2.2rem;
+      cursor: pointer;
+    }
+  }
+  .app-store {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    .app-store-card {
+      cursor: pointer;
+      img {
+      }
+    }
+  }
+}
+.dashboard-referral .MuiTypography-colorTextSecondary {
+  font-size: 1.5rem;
+}
+.dashboard-referral .MuiInput-underline:before {
+  border-bottom: 0.1rem solid #cfcfcf;
+}
+.dashboard-referral .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 0.1rem solid #cfcfcf;
+}
+.dashboard-referral .MuiInput-underline:after {
+  border-bottom: 0.1rem solid #cfcfcf;
+}
+// Responsive
+@media screen and (max-width: 1024px) {
+  .profile-balance-wrap {
+    flex-direction: column;
+    .portfolio-summary {
+      margin-bottom: 2rem;
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .dashboard-sidebar {
+    display: none;
+  }
+  .dashboard-container {
+    width: auto;
+  }
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dashboard-container {
+    padding: 0.5rem;
+    margin-top: 7rem;
+  }
+  .dashboard-wrapper {
+    margin-top: 0rem;
+    .dashboard-primary-heading label{
+      font-size: 1.2rem;
+    }
+  }
+  .portfolio-summary .portfolio-summary-value-wrap .portfolio-summary-value .portfolio-summary-value-price span{
+    font-size: 1.5rem!important;
+  }
+  .lending {
+    width: auto!important;
+    margin-bottom: 1.5rem;
+  }
+  .invest-performance {
+    width: auto;
+  }
+  .lending-performance-wrap {
+    flex-direction: column;
+  }
+  .lending .lending-card-wrap .lending-card {
+    width: 65% !important;
+  }
+  .portfolio-summary
+    .portfolio-summary-value-wrap
+    .portfolio-summary-value
+    .portfolio-summary-value-price
+    span {
+    font-size: 1.6rem;
+  }
+  .portfolio-summary .portfolio-summary-value-wrap {
+    margin-top: 1rem;
+  }
+  .top-loans .top-loans-card-wrap .top-loans-card {
+    flex-direction: column;
+  }
+  .top-loans
+    .top-loans-card-wrap
+    .top-loans-card
+    .top-loans-card-inner
+    ul
+    li
+    label {
+    text-align: left;
+  }
+  .top-loans .top-loans-notes {
+    flex-direction: column;
+  }
+  .top-loans p {
+    margin-bottom: 1rem;
+  }
+}

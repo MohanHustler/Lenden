@@ -1,0 +1,43 @@
+.withdraw-card {
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+  border-radius: 10px;
+  .withdraw-card-head {
+    h2 {
+      font-size: 18px;
+      line-height: 22px;
+      color: #1b1b1b;
+    }
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1B1B1B;
+      margin-top: 1.7rem;
+    }
+    span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #676767;
+      margin-top: 3.6rem;
+      display: block;
+    }
+  }
+  .withdraw-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .custom-input {
+      width: 267px;
+      input {
+        font-size: 14px;
+        line-height: 17px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}

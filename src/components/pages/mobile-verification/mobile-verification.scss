@@ -1,0 +1,224 @@
+// mobile verification
+.mobile-verification {
+  display: flex;
+  background: linear-gradient(90deg, #ececec 0%, #ffffff 56.77%);
+  justify-content: space-between;
+  .mobile-image {
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    flex-basis: 49%;
+    position: relative;
+    .mobile-img {
+      width: 32.4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  //   verification text
+  .verification {
+    flex-basis: 43%;
+    margin-top: 9rem;
+    .custom-form {
+      width: 32rem;
+      .process-bar {
+        margin: 3rem 0 4rem;
+        label {
+          float: right;
+          margin-right: 2rem;
+        }
+      }
+    }
+    p {
+      display: inline-block;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+      color: #4d4d4d;
+      label {
+        font-weight: 600;
+      }
+    }
+    .check-box {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 1rem;
+      margin-top: 0.2rem;
+    }
+    .confirm {
+      h2 {
+        margin-bottom: 0px !important;
+      }
+    }
+    .verfication-text {
+      margin-bottom: 2rem;
+      h1 {
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: #1b1b1b;
+        margin-bottom: 5rem;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+        color: #1b1b1b;
+        margin-bottom: 4rem;
+      }
+    }
+    .mgb {
+      margin-bottom: 0.5rem !important;
+    }
+    .custom-input {
+      position: relative;
+      margin-bottom: 3rem;
+      input {
+        font-size: 1.6rem;
+        width: 92%;
+      }
+      span {
+        // width: 1.9rem;
+        // position: absolute;
+        // right: 0px;
+        // bottom: 0.2em;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        // text-align: center;
+        cursor: pointer;
+        float: right;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.7rem;
+        img {
+          width: 1.9rem;
+          height: 100%;
+        }
+        span {
+          color: #319cd8;
+          text-decoration: none;
+          cursor: pointer;
+          width: 100%;
+        }
+      }
+      .send-text {
+        width: 6.9rem;
+        bottom: 0.8rem;
+        .resend-otp {
+          top: 0rem;
+        }
+      }
+      .dob-date-picker {
+        width: 100%;
+      }
+      .MuiInput-root {
+        width: 100%;
+      }
+      .MuiSelect-root {
+        font-size: 1.6rem;
+      }
+    }
+    .custom-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      label {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      span {
+        font-size: 1.6rem;
+        padding: 0rem 0.5rem;
+      }
+    }
+    .permanent-address {
+      padding-top: 3rem;
+    }
+    .note {
+      margin-top: 1rem;
+    }
+    .paragraph {
+      p {
+        width: 85% !important;
+      }
+    }
+    .custom-notes {
+      p {
+        width: 100%;
+      }
+      h3 {
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #9c9c9c;
+      }
+    }
+    .verification-btn {
+      background: linear-gradient(90deg, #6fa346 0%, #adde88 100%);
+      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 0.8rem;
+      margin-bottom: 3rem;
+      cursor: pointer;
+      margin-top: 4rem;
+    }
+    .verify-notes {
+      padding-bottom: 3rem;
+      margin-left: 2rem;
+      h4 {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #a6a6a6;
+        span {
+          a {
+            color: #319cd8;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-block;
+            padding: 0rem 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+.MuiMenuItem-root {
+  font-size: 1.6rem !important;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-verification {
+    background: #ffffff;
+    flex-direction: column;
+    .mobile-image {
+      display: none;
+    }
+    .verification {
+      padding: 0 3.5rem;
+      .verfication-text {
+        h1 {
+          text-align: center;
+        }
+      }
+      .custom-form {
+        width: 100%;
+        .check-box {
+          margin-left: 0rem;
+        }
+        .verification-btn {
+          text-align: center;
+          margin: 2.5rem auto;
+        }
+      }
+    }
+  }
+}

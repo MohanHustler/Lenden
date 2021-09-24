@@ -1,0 +1,18 @@
+.settingsLink {
+    text-decoration: none;
+    .setting-card{
+        padding:1.0rem 2.5rem;
+        border-radius: 8px;
+        border: 1px solid #C4C4C4;
+        width: 125px;
+        position: relative;
+        margin-left: 2rem;
+        cursor: pointer;
+        .setting-card-img{
+            position: absolute;
+            top: -8px;
+            left: -12px;
+        }
+    }
+    
+}

@@ -1,0 +1,52 @@
+// balance-sec
+
+.balance-sec {
+  h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1B1B1B;
+    margin-left: 1.3rem;
+  }
+  .balance-currency-sec {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-top: 1.2rem;
+    h3 {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1B1B1B;
+    }
+    .balance-curreny {
+      margin-top: 1.2rem;
+      span {
+        img {
+          width: 14px;
+          height: 14px;
+          object-fit: cover;
+        }
+      }
+      label {
+        margin-left: 0.3rem;
+        font-style: bold;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #1B1B1B;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) { 
+  .balance-sec {
+    width: 100%;
+    .balance-currency-sec {
+      width: auto;
+    }
+  }
+} 

@@ -1,0 +1,484 @@
+/* Application level common css */
+
+// Toastr Styles
+@import "./lib/toastr.min.css";
+@import "./lib/animate.min.css";
+
+// Rem conversion 1rem=10
+html {
+  font-size: 62.5%;
+}
+h1 {
+  margin: 0rem;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.green-btn {
+  margin: 0rem;
+}
+
+// Button css
+.pink-btn {
+  background: #575a89;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  color: #fff;
+  text-align: center;
+  width: 10.7rem;
+  padding: 0.7rem 0rem;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: #3b42a5;
+  }
+}
+.white-btn {
+  border-radius: 5px;
+  border: 1px solid #af2323;
+  font-size: 9px;
+  line-height: 11px;
+  color: #af2323;
+  font-weight: 500;
+  padding: 0.5rem 0rem;
+  width: 75px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background-color: #af2323;
+    color: #fff;
+  }
+}
+.blue-btn {
+  background: #319cd8;
+  border-radius: 5px;
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 0rem;
+  width: 85px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #00a3ff;
+  }
+}
+
+.gry-btn {
+  background: #e4e4e4;
+  border-radius: 5px;
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.8rem 0rem;
+  width: 85px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+// Input
+.MuiFormControl-marginNormal {
+  margin: 0px !important;
+}
+p {
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  li {
+    list-style-type: none;
+  }
+}
+.hide {
+  display: none !important;
+}
+.sign-btn {
+  width: 70% !important;
+}
+button {
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.green-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0.2rem 0.3rem 0.4rem rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.8rem 0rem;
+  width: 100%;
+  display: inline-block;
+  background: linear-gradient(90deg, #6fa346 0%, #adde88 100%);
+  text-decoration: none;
+}
+.MuiPickersToolbar-toolbar {
+  background: linear-gradient(90deg, #6fa346 0%, #adde88 100%);
+}
+// Loader
+.loading {
+  text-align: center;
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .spinner-loader {
+      margin-left: 6rem;
+    }
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+}
+
+// Spinner
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: #6fa346;
+  animation: spinner 0.6s linear infinite;
+}
+
+// Page Loader
+@keyframes spinner-loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner-loader:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top-color: #6fa346;
+  animation: spinner 0.6s linear infinite;
+  margin-bottom: 5rem;
+  display: block;
+}
+.green-btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(90deg, #6e964f 0%, #b9f38d 100%);
+}
+.green-btn:disabled {
+  box-shadow: 0.2rem 0.3rem 0.4rem rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, #c4c4c4 -1.07%, #e0e0e0 100%);
+  cursor: not-allowed !important;
+}
+
+// Heading Table
+.common-table-heading {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 700;
+  }
+  span{
+    cursor: pointer;
+    img{
+      width: 1.6rem;
+      height: 1.2rem;
+    }
+  }
+  .common-table-desc {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    label {
+      font-size: 14px;
+      line-height: 17px;
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        display: inline-block;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+// common table responsive
+@media only screen and (max-width: 767px) {
+  .common-table-heading {
+    margin-top: 7rem;
+    .common-table-desc {
+      display: block;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// collapse custom css
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+.MuiPaper-root {
+  background-color: transparent !important;
+}
+.MuiExpansionPanelSummary-root {
+  padding: 0rem !important;
+}
+.MuiExpansionPanelSummary-content.Mui-expanded {
+  margin: 0rem !important;
+}
+.MuiExpansionPanelSummary-content {
+  margin: 0rem !important;
+}
+.MuiCollapse-wrapperInner {
+  margin-left: -14px;
+}
+// .MuiPopover-paper {
+//   position: absolute !important;
+//   top: 6rem !important;
+// }
+.MuiSelect-select:focus{
+  background-color: #fff!important;
+}
+.MuiOutlinedInput-input {
+  padding: 1rem !important;
+  width: 7rem !important;
+}
+.MuiPaper-elevation24 {
+  box-shadow: none !important;
+}
+// Slider Hiden
+.slick-next:before {
+  opacity: 0 !important;
+}
+.slick-prev:before {
+  opacity: 0 !important;
+}
+
+// collapose
+.MuiExpansionPanelDetails-root {
+  padding: 0rem !important;
+}
+.MuiExpansionPanelSummary-root.Mui-expanded {
+  min-height: auto !important;
+}
+.MuiCollapse-wrapperInner {
+  margin: 0rem !important;
+}
+.MuiExpansionPanel-rounded:last-child {
+  margin-bottom: 1rem;
+}
+
+// White Checkbox start
+.white-checkbox-sec {
+  margin-right: 2rem;
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark {
+        background: #ffffff;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+        &:after {
+          display: block;
+        }
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 15px !important;
+      border-radius: 100%;
+      background: #fefefe;
+      border: 0.5px solid #d9d9d9;
+      box-sizing: border-box;
+      box-shadow: inset 0px 0px 5px #d6d6d6;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 7px;
+        top: -3px;
+        width: 3px;
+        height: 12px;
+        border: solid #6fa346;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+// White Checkbox end
+.MuiFormControlLabel-root {
+  margin: 0px !important;
+}
+.MuiCheckbox-root {
+  position: absolute !important;
+  top: 15px !important;
+  left: -9px !important;
+  z-index: 9 !important;
+}
+.MuiSvgIcon-root {
+  fill: #319cd8 !important;
+}
+
+
+// Horizontal Scroll bar
+.investment-card-sec::-webkit-scrollbar {
+  display: none;
+}
+
+.MuiDialog-paperWidthSm {
+  max-width: none !important;
+}
+.MuiPickersYearSelection-container{
+  background-color: #fff !important;
+}
+
+// disable input
+.MuiInput-underline.Mui-disabled:before {
+  border-bottom-style: solid!important;
+}
+
+// arrow
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// errormsg
+.MuiFormHelperText-root {
+  color: red !important;
+  font-size: 1.5rem !important;
+}
+
+// invest page tick icon
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+  padding: 0rem !important;
+}
+.MuiSvgIcon-root {
+  font-size: 2.6rem !important;
+  height: 1.3em !important;
+}
+
+
+// MuiFlatPagination-root
+
+.MuiFlatPagination-root {
+  text-align: center;
+  background: #ffffff;
+    border-radius: 10px !important;
+    box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+    width: 40%;
+    margin: 0px auto;
+}
+.MuiFlatPageButton-rootCurrent {
+  padding: 2rem;
+}
+.MuiButton-root.Mui-disabled {
+  padding: 2rem;
+}
+.MuiFlatPageButton-rootStandard {
+  padding: 2rem;
+}
+.MuiButton-label {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+.MuiButton-textSecondary {
+  color: #fff !important;
+  background-color: #319cd8 !important;
+}
+.MuiButton-textPrimary {
+  color: #1b1b1b !important;
+}
+
+
+// .MuiList-padding
+
+.MuiList-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.MuiSelect-icon {
+  top: calc(50% - 17px) !important;
+}
+@media only screen and (max-width: 767px) {
+  .MuiFlatPagination-root {
+    width: 100%!important;
+  }
+}

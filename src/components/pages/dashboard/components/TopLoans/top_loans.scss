@@ -1,0 +1,126 @@
+.top-loans {
+  padding: 2rem 1.6rem;
+  background: #ffffff;
+  box-shadow: 0.4rem 0.4rem 0.9rem rgba(105, 105, 105, 0.2);
+  border-radius: 1rem;
+  margin: 2.2rem 0rem;
+  p {
+    font-family: 'Quicksand';
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #1b1b1b;
+    margin-right: 1rem;
+    span {
+      color: #000;
+      font-weight: 500;
+    }
+  }
+  .top-loans-card-wrap {
+    margin: 1rem 0rem 1.8rem;
+    .top-loans-card {
+      display: flex !important;
+      justify-content: space-between;
+      background: #f4f4f4;
+      border-radius: 0.5rem;
+      padding: 1.2rem 2rem;
+      width: 85% !important;
+      outline: 0;
+      margin: 0rem auto;
+      cursor: pointer;
+      .top-loans-card-inner {
+        &.top-loans-card-left {
+          flex-basis: 40%;
+        }
+        &.top-loans-card-right {
+          flex-basis: 60%;
+        }
+        ul {
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.8rem;
+            &:last-child {
+              margin-bottom: 0rem;
+            }
+            label {
+              font-family: 'Quicksand';
+              font-weight: bold;
+              font-size: 1rem;
+              line-height: 1.2rem;
+              color: #000000;
+              flex-basis: 50%;
+              text-align: right;
+              padding-right: 1.4rem;
+            }
+            span {
+              font-family: 'Quicksand';
+              font-size: 1.2rem;
+              line-height: 1.5rem;
+              color: #000000;
+              flex-basis: 50%;
+            }
+          }
+        }
+      }
+    }
+    .slick-arrow {
+      z-index: 9;
+      .arrow-img {
+        position: absolute;
+        top: 37%;
+        background-color: #fff;
+        padding: 0.8rem 0.6rem;
+        box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+        border-radius: 0.3rem;
+        img {
+          width: 2rem;
+        }
+      }
+
+      .slick-prev:before {
+        content: 'a' !important;
+      }
+      &.slick-prev {
+        .arrow-img {
+          left: 0rem;
+        }
+      }
+      &.slick-next {
+        .arrow-img {
+          right: 0rem;
+        }
+      }
+      &.slick-disabled {
+        .arrow-img {
+          opacity: 0.25;
+        }
+      }
+    }
+  }
+  .top-loans-notes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+    .green-button {
+      font-family: 'Quicksand';
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      color: #ffffff;
+      background-color: #90d7ac;
+      border-radius: 0.5rem;
+      min-width: 8.5rem;
+      display: inline-block;
+      text-align: center;
+      padding: 0.5rem 0rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}

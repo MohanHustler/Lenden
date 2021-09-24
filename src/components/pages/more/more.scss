@@ -1,0 +1,115 @@
+.more-page-wrapper {
+  background-color: #fff;
+  padding: 0px 2rem;
+}
+.more-page-container {
+  border-radius: 1.1rem 1.1rem 0rem 0rem;
+  background: #f9f9f9;
+  padding: 1.8rem;
+  margin-top: 6rem;
+  .more-page-section {
+    display: flex;
+    justify-content: space-between;
+    .more-page-left {
+      flex-basis: 60%;
+      margin-right: 2rem;
+      .profile-section {
+        margin-bottom: 2rem;
+      }
+      .notify-refer {
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+        .notify {
+          flex-basis: 33%;
+        }
+        .refer {
+          flex-basis: 65%;
+        }
+      }
+      .university-section {
+        margin-bottom: 2rem;
+      }
+    }
+    .more-page-right {
+      flex-basis: 35%;
+      .wallet-section {
+        margin-bottom: 2rem;
+      }
+      .setting-section {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+// Responsive
+@media screen and (max-width: 1250px) {
+  .more-page-section {
+    flex-direction: column;
+  }
+  .more-page-container .more-page-section .more-page-left{
+    margin-right: 0rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .more-page-container {
+    padding: 0.5rem;
+    margin-top:0rem;
+    .more-page-section {
+      margin-top: 7rem;
+      .more-page-left {
+        .profile-card {
+          flex-direction: column;
+        }
+        .notify-refer {
+          flex-direction: column;
+          .notification-card {
+            margin-bottom: 1.5rem;
+          }
+          .refer-card {
+            .mobile-input {
+              width: 13rem;
+            }
+            .pink-btn {
+              width: 9rem;
+            }
+          }
+        }
+        .university-list {
+          .university-list-sec {
+            flex-direction: column;
+            .university-card {
+              margin-left: 0rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        .profile-card {
+          .profile-card-right {
+            padding-right: 0rem;
+            margin-top: 3rem;
+            .profile-card-right-top {
+              h1 {
+                padding: 1rem 2rem;
+              }
+            }
+          }
+        }
+      }
+      .setting-list {
+        flex-direction: column;
+        .setting-list-sec {
+          margin-top: 1.5rem;
+        flex-direction: column;
+        .settingsLink{
+          margin-bottom: 1rem;
+        }
+
+        }
+      }
+    }
+  }
+  .more-page-wrapper{
+    padding:0rem;
+  }
+}

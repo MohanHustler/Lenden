@@ -1,0 +1,17 @@
+.university-list{
+    background: #FFFFFF;
+    box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+    border-radius: 10px;
+    padding:0rem 1.5rem;
+    h2{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #1B1B1B;
+        font-weight: 600;
+        padding:1rem 0rem;
+    }
+    .university-list-sec{
+        padding:2.4rem;
+        display: flex;
+    }
+}

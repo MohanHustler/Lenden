@@ -1,0 +1,86 @@
+.add-funds {
+  background: #f9f9f9;
+  border-radius: 7px;
+  width: 60rem;
+  .add-funds-header {
+    text-align: center;
+    h1 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      padding-top: 10px;
+      display: inline-block;
+      vertical-align: super;
+    }
+    span {
+      display: inline-block;
+      float: right;
+      padding: 1rem;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .register-details {
+    padding: 10px 22px 0;
+    p {
+      margin-bottom: 20px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 131.9%;
+      color: #4d4d4d;
+      label {
+        font-weight: 600;
+      }
+    }
+    .accounts-details {
+      ul {
+        padding: 0 15px 0 10px;
+        li {
+          margin-bottom: 1.5rem;
+          label {
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 500;
+            color: #1b72b0;
+          }
+          span {
+            display: inline;
+            float: right;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            color: #1b72b0;
+          }
+        }
+      }
+    }
+  }
+  .notes {
+    p {
+      color: #1b72b0;
+      background-color: #efdeab;
+      padding: 10px 13px;
+      font-size: 12px;
+      line-height: 131.9%;
+      label {
+        font-weight: 600;
+      }
+    }
+  }
+
+}
+.MuiDialogContent-root{
+  padding:0rem !important;
+}
+.MuiDialog-paper{
+  margin: 0rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .add-funds{
+    width: 100%;
+  }
+}
+

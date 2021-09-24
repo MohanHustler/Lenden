@@ -1,0 +1,113 @@
+.portfolio-summary {
+  background: #ffffff;
+  box-shadow: 0.4rem 0.4rem 0.9rem rgba(105, 105, 105, 0.2);
+  border-radius: 1rem;
+  padding: 1rem 2.1rem;
+  flex-basis: 45%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .portfolio-summary-wrap {
+    display: flex;
+    justify-content: space-between;
+    .portfolio-summary-heading {
+      position: relative;
+      &:before {
+        content: "";
+        background-color: #6fa346;
+        width: 0.2rem;
+        position: absolute;
+        left: -0.7rem;
+        height: 2.2rem;
+        bottom: 1.3rem;
+      }
+    }
+    .portfolio-summary-detail {
+      display: flex;
+      align-items: center;
+      .portfolio-summary-detail-unit {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0.8rem;
+        width: 5rem;
+        margin-left: 2rem;
+        .active {
+          font-family: "Quicksand";
+          font-weight: bold;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          color: #319cd8;
+        }
+        span {
+          font-family: "Quicksand";
+          font-size: 0.8rem;
+          line-height: 1rem;
+          color: #a6a6a6;
+          cursor: pointer;
+        }
+      }
+      .portfolio-summary-detail-rate {
+        h1 {
+          color: #1b1b1b;
+          font-family: "Quicksand";
+          font-weight: 500;
+          font-size: 3rem;
+          line-height: 3.7rem;
+        }
+      }
+      .portfolio-summary-detail-increment {
+        img {
+          width: 14.77px;
+          height: 10px;
+          object-fit: cover;
+          vertical-align: bottom;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .portfolio-summary-value-wrap {
+    display: flex;
+    justify-content: space-between;
+    .portfolio-summary-value {
+      .portfolio-summary-value-heading {
+        h1 {
+          font-size: 1.4rem;
+          line-height: 1.7rem;
+          color: #1b1b1b;
+          font-family: "Quicksand";
+          font-weight: 500;
+        }
+      }
+      .portfolio-summary-value-price {
+        padding-top: 2.6rem;
+        position: relative;
+        label {
+          img {
+            width: 9px;
+            height: 9px;
+            object-fit: cover;
+          }
+        }
+        span {
+          font-family: "Quicksand";
+          font-weight: 300;
+          font-size: 2.4rem;
+          line-height: 3rem;
+          color: #1b1b1b;
+        }
+        &:before {
+          content: "";
+          background-color: #226991;
+          width: 0.2rem;
+          position: absolute;
+          left: -0.7rem;
+          height: 2.2rem;
+          bottom: 0.6rem;
+        }
+      }
+    }
+  }
+}

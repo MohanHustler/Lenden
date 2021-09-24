@@ -1,0 +1,18 @@
+.setting-list {
+  background: #ffffff;
+  box-shadow: 4px 4px 9px rgba(105, 105, 105, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .setting-list-sec {
+    display: flex;
+  }
+}

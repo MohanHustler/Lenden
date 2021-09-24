@@ -1,0 +1,226 @@
+.portfolio-wrapper {
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  display: flex;
+  margin-top: 5.5rem;
+  .portfolio-container {
+    border-radius: 1.1rem 1.1rem 0rem 0rem;
+    background: #f9f9f9;
+    padding: 1.8rem;
+    .portfolio-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .invest-performance {
+        flex-basis: 44%;
+        height: 18rem;
+        padding: 1rem 2.8rem;
+      }
+      .portfolio-summary {
+        margin-bottom: 7rem;
+      }
+     
+    }
+    .invesment-titile {
+      h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        span {
+          img {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+          }
+          margin-left: 1rem;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1b1b1b;
+        margin-top: 1.3rem;
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
+          color: #1b1b1b;
+          margin-top: 1.6rem;
+        }
+      }
+    }
+    .income-card-sec {
+      background: #ffffff;
+      box-shadow: 0px 2px 4px rgba(91, 91, 91, 0.2);
+      border-radius: 10px;
+      padding:1.8rem 5rem;
+      margin: 1.5rem 0rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .download-inves{
+      .blue-btn{
+        width: 25rem;
+        span{
+          margin-left: 1rem;
+        img{
+          width:1.4rem;
+          height: 1.4rem;
+          
+        }
+        }
+      }
+    }
+    .invesment-card-title{
+      margin-top: 2.5rem;
+      h2{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        padding-bottom: 1.3rem;
+      }
+      .invesment-cards{
+        display: flex;
+        width: 60%;
+      }
+      .investment-cardlist{
+        li{
+          display: inline-block;
+          padding-right: 3.2rem;
+          label{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1B1B1B
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media screen and (max-width: 1200px) {
+  .portfolio-wrapper {
+    .portfolio-container {
+      .portfolio-summary {
+        width: auto;
+      }
+      .income-card{
+        width: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .portfolio-wrapper {
+    .portfolio-container {
+      .portfolio-summary {
+        width: auto;
+      }
+    }
+    .portfolio-wrap{
+      flex-direction: column;
+    }
+  } 
+   .invesment-sec .investment-histroy-chart .investment-chart .chartjs-render-monitor{
+    width: 100% !important;
+  }
+  .portfolio-wrapper .portfolio-container .income-card-sec{
+    flex-wrap: wrap;
+  }
+  .portfolio-wrapper .portfolio-container .income-card {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-wrapper {
+    padding: 0rem 0.5rem;
+    margin-top: 0rem;
+    .portfolio-container {
+      padding: 0.5rem;
+      margin-top: 7rem;
+      .portfolio-summary {
+        width: auto;
+        flex-basis: 100%;
+        margin-bottom: 1rem !important;
+        .portfolio-summary-wrap {
+          .portfolio-summary-detail {
+            .portfolio-summary-detail-unit {
+              label {
+                font-size: 1rem;
+              }
+            }
+            .portfolio-summary-detail-rate {
+              h1 {
+                font-size: 1.5rem;
+                margin-left: 1rem;
+              }
+            }
+          }
+        }
+        .dashboard-primary-heading {
+          h1 {
+            font-size: 1.2rem;
+            line-height: 2.2rem;
+          }
+          label {
+            font-size: 1.2rem;
+          }
+        }
+        .portfolio-summary-value-wrap {
+          flex-wrap: wrap;
+          .portfolio-summary-value {
+            width: 50%;
+            margin-bottom: 1rem;
+            .portfolio-summary-value-heading {
+              h1 {
+                font-size: 1.2rem;
+                line-height: 0.7rem;
+              }
+            }
+            .portfolio-summary-value-price {
+              padding-top: 0.6rem;
+              span {
+                font-size: 1.4rem;
+                line-height: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .portfolio-wrapper .portfolio-container .invesment-card-title .investment-cardlist li{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .investment-status-card{
+    margin-right: 0rem !important;
+    margin-bottom: 1rem !important;
+    width: auto  !important;
+  }
+  .portfolio-wrapper .portfolio-container .invesment-card-title .invesment-cards{
+    flex-direction: column;
+    width: 100%;
+  }
+  .download-inves{
+    margin-top: 1rem;
+  }
+  .portfolio-wrapper .portfolio-container .portfolio-wrap .invest-performance{
+    padding:0rem!important;
+  }
+ 
+
+  .portfolio-wrapper .portfolio-container .income-card-sec{
+    flex-direction: column;
+  }
+}

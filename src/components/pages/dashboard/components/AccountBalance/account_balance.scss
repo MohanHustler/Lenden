@@ -1,0 +1,75 @@
+.account-balance{
+  background-color: #fff;
+  padding: 1rem 1.2rem;
+  box-shadow: 0.4rem 0.4rem 0.9rem rgba(105, 105, 105, 0.2);
+  border-radius: 1rem;  
+  h1{
+    margin-bottom: 0.8rem;
+  }
+  label{
+    &.low-balance{
+      color: #AF2323;
+      font-family: "Quicksand";
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+      border: 0.1rem solid #AF2323;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+      padding: 0.4rem 1rem;
+      display: inline-block;
+    }
+  }
+  .account-balance-amount{
+    padding: 1.5rem 0rem;
+    label{
+      font-family: "Quicksand";
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      color: #1B1B1B;
+    }
+  }
+  .btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    .blue-button{
+      font-family: "Quicksand";
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      color: #FFFFFF;
+      background-color: #319CD8;
+      border-radius: 0.5rem;
+      min-width: 8.5rem;
+      display: inline-block;
+      text-align: center;
+      padding: 0.5rem 0rem;
+      margin-top: 1.2rem;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+      padding: 1rem;
+    }
+  }
+  
+
+  input{
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    color: #C6C6C6;
+  }
+}
+.account-balance .MuiTypography-colorTextSecondary{
+  font-size: 1.5rem;
+}
+.account-balance .MuiInput-underline:before{
+  border-bottom : 0.1rem solid #CFCFCF;
+}
+.account-balance .MuiInput-underline:hover:not(.Mui-disabled):before{
+  border-bottom : 0.1rem solid #CFCFCF;
+}
+.account-balance .MuiInput-underline:after{
+  border-bottom : 0.1rem solid #CFCFCF;
+}

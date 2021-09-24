@@ -1,0 +1,209 @@
+// Sign in page home page
+.sign-in-page {
+  display: flex;
+  background: linear-gradient(90deg, #ececec 0%, #ffffff 56.77%);
+  justify-content: space-between;
+
+  .mobile-image {
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    flex-basis: 49%;
+    position: relative;
+    .mobile-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .login {
+    flex-basis: 43%;
+    margin-top: 9rem;
+    h1 {
+      margin: 4rem 0 2rem;
+      font-family: "Roboto";
+    }
+    .custom-form {
+      width: 32rem;
+      .custom-input {
+        position: relative;
+        margin-bottom: 3rem;
+        input {
+          font-size: 1.6rem;
+          width: 92%;
+        }
+
+        span {
+          position: absolute;
+          right: 0.1rem;
+          width: 1.9rem;
+          top: 0.7rem;
+          cursor: pointer;
+          .send-text {
+            width: 7rem;
+          
+          }
+          
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          span {
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            color: #319cd8;
+            cursor: pointer;
+            text-decoration: none;
+          }
+        }
+        .check-box {
+          position: absolute;
+          bottom: 4rem;
+        }
+        .send-text {
+          width: 7rem;
+          bottom: 0.8rem;
+        }
+        label {
+          font-size: 1.6rem;
+          color: #9c9c9c;
+        }
+      }
+      .custom-notes {
+        h3 {
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.2rem;
+          color: #9c9c9c;
+          margin-top: 0.5rem;
+          position: relative;
+          .counttime {
+            position: absolute;
+            left: 70px;
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            color: #9c9c9c;
+            top: -11px;
+            span {
+              font-weight: normal;
+              font-size: 1rem;
+              line-height: 1.2rem;
+              color: #9c9c9c;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+      .verification-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .referal-mobile {
+      display: none;
+    }
+    .referal {
+      font-weight: normal;
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+      text-align: center;
+      padding: 2.5rem 0;
+      color: #a6a6a6;
+      h3 {
+        margin-bottom: 0.6rem;
+      }
+      label {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
+        color: #141414;
+      }
+    }
+    .sign-in-link {
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #81b955;
+        display: inline;
+      }
+    }
+    .signup-link {
+      margin-top: 3rem;
+      span {
+        a {
+          font-size: 1.3rem;
+          line-height: 1.6rem;
+          cursor: pointer;
+          color: #81b955;
+          margin-top: 2rem;
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Mobile responsive
+@media only screen and (max-width: 768px) {
+  .sign-in-page {
+    background: #fff;
+    flex-direction: column;
+    padding: 0 3.5rem;
+    .mobile-image {
+      display: none;
+    }
+    .login {
+      .custom-form {
+        text-align: center;
+        width: 100%;
+        .custom-input {
+          .send-text {
+            right: 0.4rem !important;
+          }
+          span {
+            right: 0.5rem;
+          }
+          .custom-notes {
+            h3 {
+              text-align: start;
+            }
+          }
+        }
+        .green-btn {
+          text-align: center;
+          margin: 0 auto;
+          width: 100% !important;
+        }
+        .verification-btn {
+          flex-direction: column;
+          .sign-in-link {
+            margin: 2.5rem 0 4rem;
+          }
+        }
+        // .referal-mobile {
+
+        // }
+        .referal {
+          display: none;
+        }
+      }
+    }
+  }
+}

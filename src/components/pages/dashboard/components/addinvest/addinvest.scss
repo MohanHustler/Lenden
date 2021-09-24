@@ -1,0 +1,79 @@
+.invest-now {
+  width: 51.6rem;
+  background: #ffffff;
+  border-radius: 9px;
+  margin: 7rem;
+  padding: 2rem 1.8rem;
+  .invest-tabel {
+    tr {
+      th {
+        font-weight: 600;
+        text-align: left;
+      }
+      td {
+        padding: 12px 0px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #000000;
+        width: 28%;
+        .sub-select {
+          display: flex;
+          align-content: center;
+          span {
+            padding: 0 0.4rem 0 0.3rem;
+          }
+          .sub-img {
+            cursor: pointer;
+            img {
+              width: 2rem;
+            }
+          }
+        }
+        .rube-img {
+          display: inline;
+          img {
+            width: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .invest-add {
+    .custom-input {
+      margin-left: 1rem;
+      display: inline-block;
+      width: 65%;
+      input {
+        text-align: center;
+        padding: 0rem;
+        font-size: 2rem;
+        color: #1b1b1b;
+      }
+    }
+  }
+  .invest-btn {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    .blue-btn {
+      width: 80%;
+    }
+  }
+  .invest-content {
+    p {
+      width: 86%;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      margin-top: 1.8rem;
+      label {
+        a {
+          text-decoration: none;
+          color: #319cd8;
+          cursor: pointer;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.internet-banking {
+  .internet-register-details {
+    padding: 10px 22px 0;
+    p {
+      margin-bottom: 20px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 131.9%;
+      color: #4d4d4d;
+      label {
+        font-weight: 600;
+      }
+    }
+    .accounts-details {
+      ul {
+        padding: 0 15px 0 10px;
+        li {
+          margin-bottom: 1.5rem;
+          label {
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 500;
+            color: #1b72b0;
+          }
+          span {
+            display: inline;
+            float: right;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: bold;
+            color: #1b72b0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .internet-banking {
+    .internet-register-details { 
+      padding: 10px 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .internet-banking {
+    .internet-register-details { 
+      padding: 10px 0px;
+    }
+    .accounts-details {
+      ul {
+        li {
+          label {
+            display: block !important;
+          }
+          span {
+            display: block !important;
+            float: inherit !important;
+          }
+        }
+      }
+    }
+  }
+}

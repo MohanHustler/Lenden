@@ -1,0 +1,234 @@
+.invesment-sec {
+  width: 44%;
+  margin-bottom: 4rem;
+  .invesment-titile {
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1b1b1b;
+      margin-bottom: 2.6rem;
+      span {
+        img {
+          width: 14px;
+          height: 14px;
+          object-fit: contain;
+        }
+        margin-left: 1rem;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #1b1b1b;
+      margin-top: 1.6rem;
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1b1b1b;
+        margin-top: 1.6rem;
+      }
+    }
+  }
+  .invesment-bar {
+    width: 500px;
+    height: 120px;
+    background-color: #319cd8;
+    margin: 0px auto;
+  }
+  .investment-histroy-chart {
+    display: flex;
+    margin-bottom: 3rem;
+    .investment-moth {
+      text-align: left;
+      ul {
+        margin: 0rem 3rem;
+        li {
+          margin-bottom: 1.9rem;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
+          color: #676767;
+          padding: 0.8rem;
+          cursor: pointer;
+          &:last-child {
+            margin-bottom: 0rem;
+          }
+        }
+        .active-class {
+          background: #E7F7FF;
+          border-radius: 11px;
+          padding: 0.8rem;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          color: #319CD8;
+        }
+      }
+    }
+    // .investment-chart {
+    //   width: 320px;
+    //   height: 168px;
+    //   background-color: #319cd8;
+    // }
+    .investment-chart{
+      .chartjs-render-monitor{
+        border:1px solid rgba(0,0,0,0.3);
+        border-top: none;
+        border-right: none;
+      }
+    }
+  }
+  .invest-histroy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    .invest-histroy-content {
+      label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
+      span {
+        img {
+          width: 14px;
+          height: 14px;
+          object-fit: contain;
+        }
+        margin-left: 1rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .invesment-sec {
+    width: 100%;
+    margin-top: 3rem;
+    .invesment-bar {
+      width: 100%;
+    }
+    .investment-histroy-chart {
+      .investment-chart { 
+        width: 75%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .invesment-sec {
+    width: 100%;
+    margin-top: 3rem;
+    .invesment-bar {
+      width: 100%;
+    }
+    .investment-histroy-chart {
+      display: block;
+      .investment-moth {
+        width: 100%;
+        ul {
+          display: flex;
+          align-self: center; 
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          li {
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      .investment-chart { 
+        width: 100%;
+      }
+    }
+    .invest-histroy {
+      margin: 0rem;
+      .invest-histroy-content {
+        label {
+          font-size: 12px;
+        }
+        span {
+          font-size: 12px;
+          img {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .invesment-sec {
+    width: 100%;
+    margin-top: 3rem;
+    .invesment-bar {
+      width: 100%;
+    }
+    .investment-histroy-chart {
+      display: block;
+      .investment-moth {
+        width: 100%;
+        ul {
+          display: flex;
+          align-content: center;
+          margin-bottom: 3rem;
+          flex-wrap: wrap;
+          li {
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      .investment-chart { 
+        width: 100%;
+      }
+    }
+    .invest-histroy {
+      margin: 0rem;
+      .invest-histroy-content {
+        label {
+          font-size: 12px;
+        }
+        span {
+          font-size: 12px;
+          img {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) { 
+  .invesment-sec {
+    .investment-histroy-chart {
+        ul {
+          margin-bottom: 3rem;
+          li {
+            margin-left: 3rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+          }
+        }
+      }
+    }
+  }
